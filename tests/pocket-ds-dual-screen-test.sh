@@ -12,6 +12,7 @@ device_env="$ROOT/system_files/usr/libexec/armada/device-env"
 # still targets the primary connector through sessions.d/steam.
 grep -q '^ARMADA_PRIMARY_CONNECTOR=DSI-1$' "$pocket_ds_conf"
 grep -q '^ARMADA_SECONDARY_CONNECTOR=DSI-2$' "$pocket_ds_conf"
+grep -q '^ARMADA_VIRTUAL_KEYBOARD_CONNECTOR=DSI-2$' "$pocket_ds_conf"
 grep -q '^ARMADA_PANEL_ORIENTATION=left$' "$pocket_ds_conf"
 grep -q "^ARMADA_PRIMARY_TOUCHSCREEN='generic ft5x06 (44)'$" "$pocket_ds_conf"
 grep -q "^ARMADA_SECONDARY_TOUCHSCREEN='Goodix Capacitive TouchScreen'$" "$pocket_ds_conf"
